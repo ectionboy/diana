@@ -142,7 +142,7 @@ function Header() {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open">
-              <Button variant="contained" onClick={handleOpenUserMenu} sx={{ p: 1, color: '#FFFFFF', backgroundColor: '#1F1F1F' }}>
+              <Button variant="contained" onClick={handleOpenUserMenu} sx={{ p: 1, color: '#FFFFFF', backgroundColor: '#1F1F1F', "&:hover": {backgroundColor: '#2c2b2b'}}}>
                 Let’s Talk
               </Button>
             </Tooltip>
