@@ -51,8 +51,8 @@ function Header() {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
+    <AppBar position="static"  sx={{backgroundColor: '#FFD4D0', color: '#1F1F1F'}}>
+      <Container maxWidth="xl" >
         <Toolbar disableGutters>
           <DiamondIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
@@ -98,7 +98,7 @@ function Header() {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{
+              sx={{color: '#1F1F1F',
                 display: { xs: 'block', md: 'none' },
               }}
             >
@@ -133,7 +133,7 @@ function Header() {
               <Button
                 key={page}
                 onClick={() => handleCloseNavMenu(page)}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: '#1F1F1F', display: 'block' }}
               >
                 {page}
               </Button>
