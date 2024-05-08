@@ -1,29 +1,3 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-
-// const Header = () => {
-//   return (
-//     <header>
-//       <nav>
-//         <ul>
-//           <li>
-//             <Link to="/">Головна</Link>
-//           </li>
-
-//           <li>
-//             <Link to="/subject">Предмети</Link>
-//           </li>
-          
-//           <li>
-//             <Link to="/about">Про нас</Link>
-//           </li>
-//         </ul>
-//       </nav>
-//     </header>
-//   );
-// };
-
-// export default Header;
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -33,34 +7,32 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import DiamondIcon from '@mui/icons-material/Diamond';
 import { useNavigate } from 'react-router-dom';
 
-const pages = ['Головна', 'Предмети', 'Про нас'];
+const pages = ['Головна', 'Про мене'];
 const pagesURL = {
-  'Головна': '/',
-  'Предмети': '/subject',
-  'Про нас': '/about',
-}
-const settings = ['Профіль', 'Вийти'];
+  Головна: '/',
+  'Про мене': '/about',
+};
+const settings = ['Telegram', 'Instagram'];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const handleOpenNavMenu = (event) => {
+  const handleOpenNavMenu = event => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
+  const handleOpenUserMenu = event => {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseNavMenu = (page) => {
-    menuItemClick(page)
+  const handleCloseNavMenu = page => {
+    menuItemClick(page);
     setAnchorElNav(null);
   };
 
@@ -70,24 +42,24 @@ function Header() {
 
   const navigate = useNavigate();
 
-  const navTo = (to) => {
-    navigate(to)
+  const navTo = to => {
+    navigate(to);
   };
-  const menuItemClick = (item) => { 
+  const menuItemClick = item => {
     const to = pagesURL[item];
-    navigate(to)
-  }
+    navigate(to);
+  };
 
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <DiamondIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
             component="a"
-            onClick={()=>navTo("/")}
+            onClick={() => navTo('/')}
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -98,7 +70,7 @@ function Header() {
               textDecoration: 'none',
             }}
           >
-            MLP
+            Diana
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -130,19 +102,19 @@ function Header() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
+              {pages.map(page => (
                 <MenuItem key={page} onClick={() => handleCloseNavMenu(page)}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <DiamondIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
             component="a"
-            onClick={()=>navTo("/")}
+            onClick={() => navTo('/')}
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -154,10 +126,10 @@ function Header() {
               textDecoration: 'none',
             }}
           >
-            MLP
+            Diana
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {pages.map(page => (
               <Button
                 key={page}
                 onClick={() => handleCloseNavMenu(page)}
@@ -169,10 +141,10 @@ function Header() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
+            <Tooltip title="Open">
+              <Button variant="contained" onClick={handleOpenUserMenu} sx={{ p: 1, color: '#FFFFFF', backgroundColor: '#1F1F1F' }}>
+                Let’s Talk
+              </Button>
             </Tooltip>
             <Menu
               sx={{ mt: '45px' }}
@@ -190,7 +162,7 @@ function Header() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
+              {settings.map(setting => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
