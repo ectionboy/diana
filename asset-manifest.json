@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/diana/static/css/main.7acaea2f.css",
+    "main.js": "/diana/static/js/main.e48f49cb.js",
+    "index.html": "/diana/index.html",
+    "main.7acaea2f.css.map": "/diana/static/css/main.7acaea2f.css.map",
+    "main.e48f49cb.js.map": "/diana/static/js/main.e48f49cb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.e48f49cb.js"
+  ]
+}
