@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/diana/static/css/main.7acaea2f.css",
-    "main.js": "/diana/static/js/main.e48f49cb.js",
-    "index.html": "/diana/index.html",
-    "main.7acaea2f.css.map": "/diana/static/css/main.7acaea2f.css.map",
-    "main.e48f49cb.js.map": "/diana/static/js/main.e48f49cb.js.map"
+    "main.css": "/math-learning-platform/static/css/main.7acaea2f.css",
+    "main.js": "/math-learning-platform/static/js/main.e48f49cb.js",
+    "index.html": "/math-learning-platform/index.html",
+    "main.7acaea2f.css.map": "/math-learning-platform/static/css/main.7acaea2f.css.map",
+    "main.e48f49cb.js.map": "/math-learning-platform/static/js/main.e48f49cb.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
