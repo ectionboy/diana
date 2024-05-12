@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const ContainerStyled = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
   //   max-width: 375px;
   margin: 0 auto;
   width: 100%;
@@ -44,4 +46,29 @@ export const ServicesText = styled.p`
   color: #1f1f1f;
   text-align: center;
   max-width: 810px;
+`;
+export const ServicesList = styled.ul`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+`;
+export const ServicesListItem = styled.li`
+  width: 274px;
+  padding: 4px;
+`;
+export const ServicesListImg = styled.img`
+width: 54px;
+height: 54px;
+`;
+export const ServicesListTitle = styled.h3`
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1f1f1f;
+  margin: 8px 0;
+`;
+export const ServicesListText = styled.p`
+
 `;

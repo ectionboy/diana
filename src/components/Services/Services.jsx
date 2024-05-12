@@ -1,10 +1,16 @@
 import React from 'react';
 import {
   ContainerStyled,
+  ServicesList,
+  ServicesListImg,
+  ServicesListItem,
+  ServicesListText,
+  ServicesListTitle,
   ServicesText,
   ServicesTitle,
   TitleContainer,
 } from './Services.styled';
+import taskIcon from '../../img/task.png';
 
 const Services = () => {
   return (
@@ -17,6 +23,40 @@ const Services = () => {
           together.
         </ServicesText>
       </TitleContainer>
+        <ServicesList className='list'>
+          <ServicesListItem>
+            <ServicesListImg src={taskIcon} alt="task icon" />
+            <ServicesListTitle>Design</ServicesListTitle>
+            <ServicesListText>
+              I specialize in web development and design, creating visually
+              appealing, user-friendly digital experiences.
+            </ServicesListText>
+          </ServicesListItem>
+          <ServicesListItem>
+            <ServicesListImg src={taskIcon} alt="task icon" />
+            <ServicesListTitle>Design</ServicesListTitle>
+            <ServicesListText>
+              I specialize in web development and design, creating visually
+              appealing, user-friendly digital experiences.
+            </ServicesListText>
+          </ServicesListItem>
+          <ServicesListItem>
+            <ServicesListImg src={taskIcon} alt="task icon" />
+            <ServicesListTitle>Design</ServicesListTitle>
+            <ServicesListText>
+              I specialize in web development and design, creating visually
+              appealing, user-friendly digital experiences.
+            </ServicesListText>
+          </ServicesListItem>
+          <ServicesListItem>
+            <ServicesListImg src={taskIcon} alt="task icon" />
+            <ServicesListTitle>Design</ServicesListTitle>
+            <ServicesListText>
+              I specialize in web development and design, creating visually
+              appealing, user-friendly digital experiences.
+            </ServicesListText>
+          </ServicesListItem>
+        </ServicesList>
     </ContainerStyled>
   );
 };
