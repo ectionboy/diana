@@ -10,6 +10,8 @@ export const ContainerStyled = styled.div`
   width: 100%;
   padding: 40px 0;
   background-color: #ffd4d0;
+  /* background-color: #FFFFFF; */
+
   font-family: 'Montserrat', sans-serif;
 
   //   @media screen and (min-width: 768px) {
@@ -58,9 +60,10 @@ export const ServicesListItem = styled.li`
   width: 274px;
   padding: 4px;
 `;
-export const ServicesListImg = styled.img`
-width: 54px;
-height: 54px;
+export const Icon = styled.svg`
+  fill: #fc3314;
+  width: 54px;
+  height: 54px;
 `;
 export const ServicesListTitle = styled.h3`
   font-size: 18px;
@@ -69,6 +72,4 @@ export const ServicesListTitle = styled.h3`
   color: #1f1f1f;
   margin: 8px 0;
 `;
-export const ServicesListText = styled.p`
-
-`;
+export const ServicesListText = styled.p``;
