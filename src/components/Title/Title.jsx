@@ -8,7 +8,7 @@ const Title = () => {
       <TitleContainer>
         <ProfessionTitle>English teacher</ProfessionTitle>
         <MainTitle>Diana Yalinska</MainTitle>
-        <AboutText>Welcome to my portfolio.</AboutText>
+        <AboutText>Welcome to my portfolio. I am a bachelor of philology, specializing in the study of English language and literature.</AboutText>
       </TitleContainer>
       <img src={mainImg} alt="Фото Діани" width={"345px"} height={"430px"}/>
     </ContainerStyled>

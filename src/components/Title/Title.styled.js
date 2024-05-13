@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ContainerStyled = styled.div`
   display: flex;
   justify-content: space-evenly;
-  //   max-width: 375px;
+     /* max-width: 375px; */
   margin: 0 auto;
   width: 100%;
   padding: 40px 0;
@@ -28,6 +28,8 @@ export const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 375px;
+
 `;
 
 export const MainTitle = styled.h1`
