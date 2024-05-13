@@ -5,8 +5,8 @@ export const ContainerStyled = styled.div`
   justify-content: center;
   //   max-width: 375px;
   margin: 0 auto;
-  width: 100%;
-  padding: 40px 0;
+  /* width: 100%; */
+  padding: 20px 10px;
   background-color: #1F1F1F;
   font-family: 'Montserrat', sans-serif;
 

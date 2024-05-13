@@ -7,8 +7,8 @@ export const ContainerStyled = styled.div`
   gap: 18px;
   //   max-width: 375px;
   margin: 0 auto;
-  width: 100%;
-  padding: 40px 0;
+  /* width: 100%; */
+  padding: 20px 10px;
   background-color: #ffd4d0;
   /* background-color: #FFFFFF; */
 
@@ -21,11 +21,11 @@ export const ContainerStyled = styled.div`
   //     padding-top: '50px';
   //   }
 
-  //   @media screen and (min-width: 1440px) {
-  //     max-width: 1440px;
-  //     padding-left: 128px;
-  //     padding-right: 128px;
-  //   }
+     /* @media screen and (min-width: 1440px) {
+       max-width: 1440px;
+       padding-left: 128px;
+      padding-right: 128px;
+   } */
 `;
 
 export const TitleContainer = styled.div`
@@ -57,8 +57,7 @@ export const ServicesList = styled.ul`
   width: 100%;
 `;
 export const ServicesListItem = styled.li`
-  width: 274px;
-  padding: 4px;
+  width: 235px;
 `;
 export const Icon = styled.svg`
   fill: #fc3314;
