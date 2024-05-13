@@ -6,9 +6,9 @@ import React from 'react';
 const Home = () => {
   return (
     <>
-    <Title />
-    <AboutMe />
-    <Services />
+      <Title />
+      <AboutMe />
+      <Services />
     </>
   );
 };
