@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/diana/static/css/main.7acaea2f.css",
-    "main.js": "/diana/static/js/main.8bdcc330.js",
+    "main.js": "/diana/static/js/main.c0e0fcbd.js",
     "static/media/main-img.png": "/diana/static/media/main-img.875e39f9627e76614b05.png",
+    "static/media/icons.svg": "/diana/static/media/icons.7beb9eb174cb6cebc421115a2bfde0be.svg",
     "index.html": "/diana/index.html",
     "main.7acaea2f.css.map": "/diana/static/css/main.7acaea2f.css.map",
-    "main.8bdcc330.js.map": "/diana/static/js/main.8bdcc330.js.map"
+    "main.c0e0fcbd.js.map": "/diana/static/js/main.c0e0fcbd.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.8bdcc330.js"
+    "static/js/main.c0e0fcbd.js"
   ]
 }
