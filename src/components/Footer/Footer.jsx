@@ -65,6 +65,15 @@ const Footer = () => {
             </SocialMediaListItem>
           </SocialMediaList>
         </SocialMediaContainer>
+        <a
+          href="https://www.flaticon.com/free-icons/english"
+          title="english icons"
+          target="blank"
+          className="link"
+          style={{ color: '#afafaf', fontSize: '8px' }}
+        >
+          English icons created by Chanut-is-Industries - Flaticon
+        </a>
       </ContainerStyled>
     </>
   );
