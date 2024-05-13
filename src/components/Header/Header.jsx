@@ -13,10 +13,10 @@ import MenuItem from '@mui/material/MenuItem';
 import DiamondIcon from '@mui/icons-material/Diamond';
 import { useNavigate } from 'react-router-dom';
 
-const pages = ['Головна', 'Про мене'];
+const pages = ['Main', 'About'];
 const pagesURL = {
-  Головна: '/',
-  'Про мене': '/about',
+  'Main': '/',
+  'About': '/about',
 };
 const settings = ['Telegram', 'Instagram'];
 
