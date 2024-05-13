@@ -15,10 +15,10 @@ import { useNavigate } from 'react-router-dom';
 
 const pages = ['Main', 'About'];
 const pagesURL = {
-  'Main': '/',
-  'About': '/about',
+  Main: '/',
+  About: '/about',
 };
-const settings = ['Telegram', 'Instagram'];
+const settings = ['Instagram', 'Facebook', 'Telegram'];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -51,8 +51,11 @@ function Header() {
   };
 
   return (
-    <AppBar position="static"  sx={{backgroundColor: '#FFD4D0', color: '#1F1F1F'}}>
-      <Container maxWidth="xl" >
+    <AppBar
+      position="static"
+      sx={{ backgroundColor: '#FFD4D0', color: '#1F1F1F' }}
+    >
+      <Container maxWidth="xl">
         <Toolbar disableGutters>
           <DiamondIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
@@ -98,9 +101,7 @@ function Header() {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{color: '#1F1F1F',
-                display: { xs: 'block', md: 'none' },
-              }}
+              sx={{ color: '#1F1F1F', display: { xs: 'block', md: 'none' } }}
             >
               {pages.map(page => (
                 <MenuItem key={page} onClick={() => handleCloseNavMenu(page)}>
@@ -142,7 +143,16 @@ function Header() {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open">
-              <Button variant="contained" onClick={handleOpenUserMenu} sx={{ p: 1, color: '#FFFFFF', backgroundColor: '#1F1F1F', "&:hover": {backgroundColor: '#2c2b2b'}}}>
+              <Button
+                variant="contained"
+                onClick={handleOpenUserMenu}
+                sx={{
+                  p: 1,
+                  color: '#FFFFFF',
+                  backgroundColor: '#1F1F1F',
+                  '&:hover': { backgroundColor: '#2c2b2b' },
+                }}
+              >
                 Let’s Talk
               </Button>
             </Tooltip>
