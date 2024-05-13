@@ -6,13 +6,13 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <div
+      <main
         style={{
           fontFamily: 'Montserrat, sans-serif',
         }}
       >
         {children}
-      </div>
+      </main>
       <Footer />
     </>
   );
