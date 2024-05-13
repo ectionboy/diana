@@ -1,7 +1,16 @@
-import { Container, Typography } from '@mui/material';
-import AdbIcon from '@mui/icons-material/Adb';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Typography } from '@mui/material';
+import DiamondIcon from '@mui/icons-material/Diamond';
+import {
+  ContainerStyled,
+  Icon,
+  SocialMediaContainer,
+  SocialMediaList,
+  SocialMediaListItem,
+  SocialMediaTitle,
+} from './Footer.styled';
+import icons from '../../img/icons.svg';
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -10,35 +19,54 @@ const Footer = () => {
     navigate(to);
   };
   return (
-    <Container
-      maxWidth="xl"
-      sx={{
-        backgroundColor: '#1976d2',
-        color: '#ffffff',
-        padding: '8px 16px',
-        display: 'flex',
-        alignItems: 'center',
-      }}
-    >
-      <AdbIcon sx={{ mr: 1 }} />
-      <Typography
-        variant="h6"
-        noWrap
-        component="a"
-        onClick={() => navTo('/')}
-        sx={{
-          mr: 2,
-          display: { md: 'flex' },
-          fontFamily: 'monospace',
-          fontWeight: 700,
-          letterSpacing: '.3rem',
-          color: 'inherit',
-          textDecoration: 'none',
-        }}
-      >
-        MLP
-      </Typography>
-    </Container>
+    <>
+      <ContainerStyled>
+        <div>
+          <DiamondIcon sx={{ mr: 1 }} />
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            onClick={() => navTo('/')}
+            sx={{
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          >
+            Diana
+          </Typography>
+        </div>
+        <SocialMediaContainer>
+          <SocialMediaTitle>Follow me on social media:</SocialMediaTitle>
+          <SocialMediaList className="list">
+            <SocialMediaListItem>
+              <a href="/diana">
+                <Icon>
+                  <use xlinkHref={`${icons}#instagram`} />
+                </Icon>
+              </a>
+            </SocialMediaListItem>
+            <SocialMediaListItem>
+              <a href="/diana">
+                <Icon>
+                  <use xlinkHref={`${icons}#facebook`} />
+                </Icon>
+              </a>
+            </SocialMediaListItem>
+            <SocialMediaListItem>
+              <a href="/diana">
+                <Icon>
+                  <use xlinkHref={`${icons}#telegram`} />
+                </Icon>
+              </a>
+            </SocialMediaListItem>
+          </SocialMediaList>
+        </SocialMediaContainer>
+      </ContainerStyled>
+    </>
   );
 };
 
